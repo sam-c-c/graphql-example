@@ -1,0 +1,296 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-11-20T15:19:36.935Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_55aa6f5bf5984a65b055c9d4e7a682b7",
+      "parentId": "fld_ca139003ac57409cb69c9feb8f0b7516",
+      "modified": 1699024653316,
+      "created": 1699020491056,
+      "url": "{{ _.url }}",
+      "name": "GetRocket",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/graphql",
+        "text": "{\"query\":\"query GetRocket {\\n\\trocket(id: \\\"5e9d0d95eda69974db09d1ed\\\"){\\n\\t\\tid\\n\\t\\tname\\n\\t\\tactive\\n\\t\\tboosters\\n\\t\\tcostPerLaunch\\n\\t\\tdiameter {\\n\\t\\t\\tmeters\\n\\t\\t\\tfeet\\n\\t\\t}\\n\\t\\theight {\\n\\t\\t\\tmeters\\n\\t\\t\\tfeet\\n\\t\\t}\\n\\t\\tmass {\\n\\t\\t\\tkg\\n\\t\\t\\tlb\\n\\t\\t}\\n\\t\\tstages\\n\\t\\tsuccessRate\\n\\t\\ttype\\n\\t}\\n}\",\"operationName\":\"GetRocket\"}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1699020491056,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ca139003ac57409cb69c9feb8f0b7516",
+      "parentId": "wrk_61dbf5a43f5c423d8b50b1b43ab78204",
+      "modified": 1699020465131,
+      "created": 1699020465131,
+      "name": "Rockets",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1699020465131,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_61dbf5a43f5c423d8b50b1b43ab78204",
+      "parentId": null,
+      "modified": 1698840953857,
+      "created": 1698840953857,
+      "name": "Apollo Server Example",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_79efa208a30c472eb5297aea15ef5bd8",
+      "parentId": "fld_ca139003ac57409cb69c9feb8f0b7516",
+      "modified": 1699020964492,
+      "created": 1699020468070,
+      "url": "{{ _.url }}",
+      "name": "GetRockets",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/graphql",
+        "text": "{\"query\":\"query GetRockets {\\n\\trockets {\\n\\t\\tid\\n\\t\\tname\\n\\t\\tactive\\n\\t\\tboosters\\n\\t\\tcostPerLaunch\\n\\t\\tdiameter {\\n\\t\\t\\tmeters\\n\\t\\t\\tfeet\\n\\t\\t}\\n\\t\\theight {\\n\\t\\t\\tmeters\\n\\t\\t\\tfeet\\n\\t\\t}\\n\\t\\tmass {\\n\\t\\t\\tkg\\n\\t\\t\\tlb\\n\\t\\t}\\n\\t\\tstages\\n\\t\\tsuccessRate\\n\\t\\ttype\\n\\t}\\n}\",\"operationName\":\"GetRockets\"}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1699020470940,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5522281f9e9b4c928818fc4ffefce429",
+      "parentId": "fld_2337f57140654cc7adeff33158980cc8",
+      "modified": 1698938724213,
+      "created": 1698933068126,
+      "url": "{{ _.url }}",
+      "name": "GetBook",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/graphql",
+        "text": "{\"query\":\"query GetBook {\\n  book(id: 2) {\\n\\t\\tid\\n    title\\n    author\\n  }\\n}\",\"operationName\":\"GetBook\"}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1698938708723,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_2337f57140654cc7adeff33158980cc8",
+      "parentId": "wrk_61dbf5a43f5c423d8b50b1b43ab78204",
+      "modified": 1698938699580,
+      "created": 1698938699580,
+      "name": "Books",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1698938699580,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_a1be16843ffa439c91cf9193c68be7b5",
+      "parentId": "fld_2337f57140654cc7adeff33158980cc8",
+      "modified": 1700488062171,
+      "created": 1698840961950,
+      "url": "{{ _.url }}",
+      "name": "GetBooks",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/graphql",
+        "text": "{\"query\":\"query GetBooks {\\n  books {\\n\\t\\tid\\n    title\\n    author\\n  }\\n}\",\"operationName\":\"GetBooks\"}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" },
+        { "name": "Content-Type", "value": "application/json" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1698938708673,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7c1a94faebe44f58ae524cb8ee30d279",
+      "parentId": "fld_2337f57140654cc7adeff33158980cc8",
+      "modified": 1700488827335,
+      "created": 1698934865842,
+      "url": "{{ _.url }}",
+      "name": "AddBook",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/graphql",
+        "text": "{\"query\":\"mutation AddNewBook {\\n  addBook(title: \\\"The Shining\\\", author: \\\"Stephen King\\\") {\\n\\t\\tid,\\n    title,\\n\\t\\tauthor\\n\\t}\\n}\",\"operationName\":\"AddNewBook\"}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1698938708623,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fc795a3848694a6db8e753f2fcda4a0b",
+      "parentId": "fld_2337f57140654cc7adeff33158980cc8",
+      "modified": 1700489324247,
+      "created": 1700488838932,
+      "url": "{{ _.url }}",
+      "name": "AddBooks",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/graphql",
+        "text": "{\"query\":\"mutation addMultipleBooks {\\n  bookOne: addBook(title: \\\"Misery\\\", author: \\\"Stephen King\\\") {\\n\\t\\tid,\\n    title,\\n\\t\\tauthor\\n\\t}\\n\\tbookTwo: addBook(title: \\\"Mr Mercedes\\\", author: \\\"Stephen King\\\") {\\n\\t\\tid,\\n    title,\\n\\t\\tauthor\\n\\t}\\n}\",\"operationName\":\"addMultipleBooks\"}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1698938708573,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f6037717f9aa4d5f89040187662ded50",
+      "parentId": "fld_2337f57140654cc7adeff33158980cc8",
+      "modified": 1698939563233,
+      "created": 1698938194610,
+      "url": "{{ _.url }}",
+      "name": "UpdateBook",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/graphql",
+        "text": "{\"query\":\"mutation UpdateBook {\\n  updateBook(id: 69, title: \\\"IT\\\", author: \\\"Stephen King\\\") {\\n\\t\\tid,\\n    title,\\n\\t\\tauthor\\n  }\\n}\",\"operationName\":\"UpdateBook\"}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1698938708523,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_40ff42a93af84a31b09231629c2cb58a",
+      "parentId": "fld_2337f57140654cc7adeff33158980cc8",
+      "modified": 1700488909290,
+      "created": 1698935637373,
+      "url": "{{ _.url }}",
+      "name": "DeleteBook",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/graphql",
+        "text": "{\"query\":\"mutation DeleteBook {\\n  deleteBook(id: 786) {\\n\\t\\tid,\\n    title,\\n\\t\\tauthor\\n\\t}\\n}\",\"operationName\":\"DeleteBook\"}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1698938708473,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_128bc6c18228aaaae12ca098f789278a176483c5",
+      "parentId": "wrk_61dbf5a43f5c423d8b50b1b43ab78204",
+      "modified": 1698933102628,
+      "created": 1698840953863,
+      "name": "Base Environment",
+      "data": { "url": "http://localhost:3000/" },
+      "dataPropertyOrder": { "&": ["url"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1698840953863,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_128bc6c18228aaaae12ca098f789278a176483c5",
+      "parentId": "wrk_61dbf5a43f5c423d8b50b1b43ab78204",
+      "modified": 1698840953866,
+      "created": 1698840953866,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
